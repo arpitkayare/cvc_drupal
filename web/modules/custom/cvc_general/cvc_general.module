@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * This is the module to implement hooks.
+ */
+use Drupal\views\ViewExecutable;
+use Drupal\views\Plugin\views\query\QueryPluginBase;
+
+ /**
+ * Implemennt hook_get_parent_term
+ * get the first parent of the term city location.
+ */
+function get_parent_term_id_from_node_route($field_name){
+    $node = \Drupal::routeMatch()->getParameter('node');
+    if($node){
+      $termId = $node->get($field_name)->getValue()[0]['target_id'];
+      $pTermId = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($termId)->parent->target_id;
+    }
+    return $pTermId;
+   }
+
+ /**
+  * implemen hook_form_alter()
+  */
+function cvc_general_form_alter(&$form, &$form_state, $form_id) {
+  if( $form['#form_id'] === 'search_block_form'){
+    $form['actions']['submit']['#access'] = FALSE;
+    $form['keys']['#size'] = 25;
+  }
+}
+
+/**
+ * Implemennt hook_views_query_alter
+ */
+function cvc_general_views_query_alter(ViewExecutable $view, QueryPluginBase $query){ 
+  if ($view->id() == 'centres_locations_block' && $view->current_display === 'block_2') {
+    $query->where[1]['conditions'][2]["value"] = get_parent_term_id_from_node_route('field_location');
+  }
+ }

@@ -1,0 +1,33 @@
+uuid: 576f9ba6-6238-49b2-a165-a21311bba505
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.city_based_all_centres_block
+  module:
+    - taxonomy
+    - views
+  theme:
+    - cvc
+id: views_block__city_based_all_centres_block_block_1
+theme: cvc
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:city_based_all_centres_block-block_1'
+settings:
+  id: 'views_block:city_based_all_centres_block-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:taxonomy_term':
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    context_mapping:
+      taxonomy_term: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+    bundles:
+      cities: cities

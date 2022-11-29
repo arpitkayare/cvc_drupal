@@ -1,0 +1,15 @@
+vaccinnation_slot_registration.slot_register:
+  path: '/vaccinnation-slot-registration/register'
+  defaults:
+    _title: 'Slot Registration'
+    _controller: '\Drupal\vaccinnation_slot_registration\Controller\VaccinnationSlotRegistrationController::registerUser'
+  requirements:
+    _permission: 'access content'
+vaccinnation_slot_registration.cancle_slot:
+  path: '/vaccinnation-slot-registration/cancle_registeration'
+  defaults:
+    _title: 'Slot Cancle'
+    _controller: '\Drupal\vaccinnation_slot_registration\Controller\VaccinnationSlotRegistrationController::registerUserCancle'
+  requirements:
+    _permission: 'access content'
+

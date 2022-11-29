@@ -1,0 +1,4 @@
+administer vaccinnation_slot_registration configuration:
+  title: 'Administer vaccinnation_slot_registration configuration'
+  description: 'Optional description.'
+  restrict access: true

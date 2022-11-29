@@ -1,0 +1,22 @@
+uuid: fb2eab22-c919-4300-9087-1461047f0886
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cvc
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: cvc_content
+theme: cvc
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: c89716f6-693e-4440-b121-acb24d022e97
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cvc
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: cvc_primary_local_tasks
+theme: cvc
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

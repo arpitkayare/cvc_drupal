@@ -1,0 +1,85 @@
+uuid: 82f5065c-42f8-459b-b0cc-2869d118033e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.faq.body
+    - node.type.faq
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          uuid: null
+          section_properties:
+            section_class: ''
+          content:
+            background_color: '#ffffff'
+            background_color_opacity: 1
+            background_color_rgba: null
+            padding_left: null
+            padding_right: null
+            padding_top: null
+            padding_bottom: null
+            background_image: {  }
+            display_background_image: false
+            display_background_color: false
+            class: ''
+            style: null
+            mobile_style: null
+            min-height: null
+            vertical_align: null
+        components:
+          d61c1723-8a10-4970-b7f3-9b434e411418:
+            uuid: d61c1723-8a10-4970-b7f3-9b434e411418
+            region: content
+            configuration:
+              id: 'extra_field_block:node:faq:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          41cedbbd-71aa-42cb-a948-c815fb896180:
+            uuid: 41cedbbd-71aa-42cb-a948-c815fb896180
+            region: content
+            configuration:
+              id: 'field_block:node:faq:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.faq.default
+targetEntityType: node
+bundle: faq
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

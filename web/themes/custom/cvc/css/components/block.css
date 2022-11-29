@@ -1,0 +1,12 @@
+#block-cvc-views-block-centres-locations-block-block-1,
+#block-cvc-views-block-centres-locations-block-block-2,
+#block-views-block-centres-locations-block-block-3,
+#booked-slot-details{
+  background-color: #f5f5f2;
+  padding: 20px;
+}
+#block-cvc-views-block-centres-locations-block-block-1 .view-header, 
+#block-cvc-views-block-centres-locations-block-block-2 .view-header,
+#block-views-block-centres-locations-block-block-3 .view-header{
+  font-weight: bold;
+}

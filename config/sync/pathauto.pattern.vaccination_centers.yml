@@ -1,0 +1,22 @@
+uuid: 217f53fb-5ca5-4f90-bded-ad5088a0cb3b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: vaccination_centers
+label: 'Vaccination center detail page'
+type: 'canonical_entities:node'
+pattern: '/[node:field_location:entity:parent:name]/[node:field_location]'
+selection_criteria:
+  98a9830b-82db-4a81-9489-2afeae779596:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 98a9830b-82db-4a81-9489-2afeae779596
+    context_mapping:
+      node: node
+    bundles:
+      covid_center: covid_center
+selection_logic: and
+weight: -5
+relationships: {  }

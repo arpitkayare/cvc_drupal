@@ -1,0 +1,18 @@
+uuid: 71984bb3-593c-4002-a7e8-35933975cb9b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Covid Center'
+type: covid_center
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,31 @@
+uuid: daa63dba-3c26-479a-837d-7e18a414a930
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_city
+  module:
+    - unique_content_field_validation
+    - user
+third_party_settings:
+  unique_content_field_validation:
+    unique: false
+    unique_text: ''
+id: user.user.field_city
+field_name: field_city
+entity_type: user
+bundle: user
+label: City
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: only_cities_referene_entity
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

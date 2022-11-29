@@ -1,0 +1,13 @@
+.primary-btn{
+    padding: 15px 60px;
+    background-color: #0d77b5;
+    color: white;
+    text-decoration: none;
+}
+.button.user-slot-register,.button.user-slot-cancle {
+  display: grid;
+  margin-right: 0;
+}
+.button.user-slot-cancle{
+  border: solid 2px #e33f1e;
+}

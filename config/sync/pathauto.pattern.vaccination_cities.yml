@@ -1,0 +1,22 @@
+uuid: 7b183953-2930-4ce1-94e0-a002bc6f0032
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: vaccination_cities
+label: 'Vaccination cities'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:name]'
+selection_criteria:
+  765a93c4-0a27-410e-bae4-762eb63e50cc:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 765a93c4-0a27-410e-bae4-762eb63e50cc
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      cities: cities
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,34 @@
+.site-branding{
+  background-image: none;
+}
+.site-branding__text a{
+  color: #0d77b5;
+}
+.header-top #block-cvc-account-menu{
+  float: right;
+  padding-right: 2.25rem;
+  margin-bottom: 0;
+}
+.header-top #block-cvc-account-menu ul.menu{
+  display: inline-flex;
+  list-style: none;
+}
+.header-top #block-cvc-account-menu ul li{
+  margin-right: 2.25rem;
+}
+.header-top #block-cvc-account-menu ul li a{
+  text-decoration: none;
+  color: #0d1214;
+}
+.header-top #block-cvc-account-menu ul li:last-child{
+  margin-right: 15px;
+}
+#block-cvc-site-branding{
+  min-height: 8rem;
+}
+button.sticky-header-toggle{
+  padding-top: 25px;
+}
+.site-branding__inner{
+  padding-bottom: 0;
+}

@@ -1,0 +1,187 @@
+uuid: 03749e04-82de-4cf8-9263-9115e570f754
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.covid_center.body
+    - field.field.node.covid_center.field_available_slots
+    - field.field.node.covid_center.field_image
+    - field.field.node.covid_center.field_location
+    - field.field.node.covid_center.layout_builder__layout
+    - node.type.covid_center
+  module:
+    - cshs
+    - image
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 67-33
+        components:
+          026505c7-598c-4c4b-9975-40fc861fc30a:
+            uuid: 026505c7-598c-4c4b-9975-40fc861fc30a
+            region: second
+            configuration:
+              id: 'field_block:node:covid_center:field_image'
+              label: Image
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+            weight: 0
+            additional: {  }
+          7f613d40-9b33-453e-a6cc-ef13a00e4666:
+            uuid: 7f613d40-9b33-453e-a6cc-ef13a00e4666
+            region: first
+            configuration:
+              id: 'extra_field_block:node:covid_center:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          9361df77-b467-4a2e-a90d-39e9f8b11d5e:
+            uuid: 9361df77-b467-4a2e-a90d-39e9f8b11d5e
+            region: first
+            configuration:
+              id: 'field_block:node:covid_center:field_available_slots'
+              label: 'Available Slots'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: number_integer
+                label: inline
+                settings:
+                  thousand_separator: ','
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          38015f9e-c059-4121-b354-0ada7379954e:
+            uuid: 38015f9e-c059-4121-b354-0ada7379954e
+            region: first
+            configuration:
+              id: 'field_block:node:covid_center:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          e05a2ff7-b07a-4489-b72d-ba30f290e095:
+            uuid: e05a2ff7-b07a-4489-b72d-ba30f290e095
+            region: first
+            configuration:
+              id: 'field_block:node:covid_center:field_location'
+              label: City
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: cshs_group_by_root
+                label: inline
+                settings:
+                  linked: 0
+                  reverse: 0
+                  sort: none
+                  depth: '1'
+                  last_child: 0
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.covid_center.default
+targetEntityType: node
+bundle: covid_center
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_available_slots:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_location:
+    type: cshs_group_by_root
+    label: above
+    settings:
+      sort: none
+      depth: '1'
+      linked: 0
+      reverse: 0
+      last_child: 0
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  layout_builder__layout: true

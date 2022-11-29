@@ -1,0 +1,13 @@
+.view > * {
+  margin-bottom: 0rem;
+}
+.region > * {
+  margin-bottom: 1rem;
+}
+.grid-full{
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  grid-column-gap: 1.25rem;
+}
+.main-content__container{
+  padding-top: 0;
+}

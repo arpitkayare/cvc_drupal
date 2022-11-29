@@ -1,0 +1,5 @@
+name: cvc general
+type: module
+description: This module contain basic hooks required to build the cvc site.
+package: Custom
+core_version_requirement: ^9 || ^10

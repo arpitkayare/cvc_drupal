@@ -1,0 +1,20 @@
+login:
+  authenticated:
+    redirect_url: /node
+    weight: '-10'
+  content_editor:
+    redirect_url: /node
+    weight: '-10'
+  administrator:
+    redirect_url: /node
+    weight: '-10'
+logout:
+  authenticated:
+    redirect_url: /user/login
+    weight: '-10'
+  content_editor:
+    redirect_url: /user/login
+    weight: '-10'
+  administrator:
+    redirect_url: /user/login
+    weight: '-10'

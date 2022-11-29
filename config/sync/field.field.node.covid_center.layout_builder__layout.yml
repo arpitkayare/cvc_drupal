@@ -1,0 +1,21 @@
+uuid: 1634c065-314c-4428-95bb-d9dfd5234923
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.covid_center
+  module:
+    - layout_builder
+id: node.covid_center.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: covid_center
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

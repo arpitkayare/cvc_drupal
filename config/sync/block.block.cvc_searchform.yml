@@ -1,0 +1,21 @@
+uuid: d13f9385-daf4-4854-96cd-63bfaddb792d
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - cvc
+id: cvc_searchform
+theme: cvc
+region: sidebar
+weight: -8
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: node_search
+visibility: {  }

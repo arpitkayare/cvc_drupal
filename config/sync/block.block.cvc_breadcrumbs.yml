@@ -1,0 +1,22 @@
+uuid: e1a8a6fb-cf78-4230-a559-89f60ad16058
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - cvc
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: cvc_breadcrumbs
+theme: cvc
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

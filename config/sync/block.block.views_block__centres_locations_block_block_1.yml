@@ -1,0 +1,29 @@
+uuid: f349db51-15e0-4ce2-a54e-33b2b4ad0b7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.centres_locations_block
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: views_block__centres_locations_block_block_1
+theme: olivero
+region: sidebar
+weight: -7
+provider: null
+plugin: 'views_block:centres_locations_block-block_1'
+settings:
+  id: 'views_block:centres_locations_block-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

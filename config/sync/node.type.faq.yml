@@ -1,0 +1,22 @@
+uuid: 13724a06-9ee5-4cef-be42-879f4800e835
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - unique_content_field_validation
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  unique_content_field_validation:
+    unique: false
+    unique_text: ''
+name: FAQ
+type: faq
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

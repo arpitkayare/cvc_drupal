@@ -1,0 +1,36 @@
+.card{
+  background: #f5f5f2;
+  padding: 40px 40px 20px;
+  margin-bottom: 20px;
+}
+
+.flex-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.card-item-1{
+  width: 75%;
+}
+.card-item-2{
+  padding-top: 20px;
+}
+.card-body .card-location,
+.card-body .card-city{
+  margin: 0;
+}
+.card-body  .card-location {
+  float: left;
+  width: 70%;
+}
+#block-cvc-page-title{
+  margin-bottom: 20px;
+}
+.block-field-blocknodecovid-centerfield-location{
+  width: 50%;
+  float: left;
+  margin-bottom: 20px;
+}
+.path-taxonomy #block-cvc-page-title{
+  display: none;
+}

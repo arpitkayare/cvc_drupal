@@ -1,0 +1,28 @@
+uuid: bfb9275a-4425-492d-9c6b-21b1915557ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - vaccinnation_slot_registration
+  theme:
+    - cvc
+id: vaccineslotregistrationbuttonblock
+theme: cvc
+region: sidebar
+weight: -9
+provider: null
+plugin: vaccinnation_slot_registration_button
+settings:
+  id: vaccinnation_slot_registration_button
+  label: 'Vaccine slot registration button block'
+  label_display: '0'
+  provider: vaccinnation_slot_registration
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      covid_center: covid_center

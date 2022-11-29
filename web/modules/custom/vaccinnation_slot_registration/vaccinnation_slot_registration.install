@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the vaccinnation slot registration module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function vaccinnation_slot_registration_schema() {
+  $schema['vaccinnation_slot_registration_records'] = [
+    'description' => 'This table keeps records of the users registred for the vaccine centres.',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'Primary Key: Unique record ID.',
+      ],
+      'uid' => [
+        'type' => 'int',
+        'not null' => FALSE,
+        'description' => 'The {users}.uid of the user who created the record.',
+      ],
+      'location' => [
+        'type' => 'int',
+        'not null' => FALSE,
+        'description' => 'tid of location in the city of the vaccination centre.',
+      ],
+      'city' => [
+        'type' => 'int',
+        'not null' => FALSE,
+        'description' => 'Parennt tid of city of the vaccination centre.',
+      ],
+    ],
+    'primary key' => ['id'],
+    'indexes' => [
+      'uid' => ['uid'],
+      'location' => ['location'],
+      'city' => ['city'],
+    ],
+  ];
+
+  return $schema;
+}

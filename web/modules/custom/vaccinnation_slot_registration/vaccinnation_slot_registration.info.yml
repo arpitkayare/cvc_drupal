@@ -1,0 +1,5 @@
+name: vaccinnation slot registration
+type: module
+description: This module provides functionality to register for the vaccine slot for a location.
+package: Custom
+core_version_requirement: ^9 || ^10
